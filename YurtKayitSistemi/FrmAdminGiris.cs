@@ -24,6 +24,7 @@ namespace YurtKayitSistemi
             komut.Parameters.AddWithValue("@p1", TxtKullanıcıAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
             SqlDataReader oku = komut.ExecuteReader();
+
             if (oku.Read())
             {
                 FrmAnaForm fr = new FrmAnaForm();
